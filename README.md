@@ -1,4 +1,4 @@
-# cccrm
+# rm_ccc_macro
 CCC for repeated measures
 
 rm_ccc_macro_v2.sas is a SAS macro the estimates the concordance correlation coefficient (CCC) for repeated and non-repeated measures.

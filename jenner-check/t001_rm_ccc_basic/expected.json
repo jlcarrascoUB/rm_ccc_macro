@@ -1,0 +1,21 @@
+{
+  "_captured_at": "2026-06-12T14:49:32Z",
+  "_captured_run_id": "r_019ebc4edf6972e18cdf56eecd81b4f9",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA meas",
+    "NOTE: PROC SORT data=meas",
+    "NOTE: PROC IML",
+    "NOTE: PROC PRINT data=ccc_out",
+    "NOTE: PROC PRINT completed: 1 observations printed"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

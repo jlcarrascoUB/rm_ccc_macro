@@ -1,0 +1,19 @@
+Repeated Measures Concordance Correlation Coefficient
+Derived from U-Statistics
+
+
+        0.98357        0.97933        0.98695        0.00193        2.39691        0.05921
+
+Weight Matrix
+       1       0       0
+       0       1       0
+       0       0       1
+
+            Concordance Correlation Coefficient - Repeated Measures             
+          U-Statistics method, identity weight (Carrasco et al. 2013)           
+
+
+         CCC  LOWER 95% CL  UPPER 95% CL        SE CCC             Z          SE Z
+------------  ------------  ------------  ------------  ------------  ------------
+0.9835746083  0.9793277077  0.9869547791  0.0019292095  2.3969137221  0.0592127353
+

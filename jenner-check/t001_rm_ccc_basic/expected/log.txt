@@ -1,0 +1,67 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: Option LS changed to 80.
+NOTE: Option PS changed to 65.
+NOTE: Option LS changed to 80.
+NOTE: Option PS changed to 65.
+NOTE: DATA _d
+
+
+NOTE: Wrote _d (3 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA meas
+
+NOTE: Processing inline DATALINES (96 lines)
+
+NOTE: Read 96 rows from DATALINES.
+NOTE: Wrote meas (96 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=meas
+
+NOTE: Unlicensed mode - input limited to 100 observations.
+NOTE: Read 96 rows from meas.
+NOTE: Wrote meas (96 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=meas
+
+NOTE: Created 48 rows.
+NOTE: Output written to /tmp/work/work/46b95720-56e1-44bb-a07b-b9b200025d93/meas_wide.avro.
+NOTE: PROC SORT data=meas_wide
+
+NOTE: Unlicensed mode - input limited to 100 observations.
+NOTE: Read 48 rows from meas_wide.
+NOTE: Wrote _temp (48 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=_temp
+
+NOTE: Created 3 rows.
+NOTE: Output written to /tmp/work/work/46b95720-56e1-44bb-a07b-b9b200025d93/_temp2.avro.
+NOTE: PROC TRANSPOSE data=_temp2
+
+NOTE: Created 16 rows.
+NOTE: Output written to /tmp/work/work/46b95720-56e1-44bb-a07b-b9b200025d93/_x.avro.
+NOTE: PROC TRANSPOSE data=_temp
+
+NOTE: Created 3 rows.
+NOTE: Output written to /tmp/work/work/46b95720-56e1-44bb-a07b-b9b200025d93/_temp2.avro.
+NOTE: PROC TRANSPOSE data=_temp2
+
+NOTE: Created 16 rows.
+NOTE: Output written to /tmp/work/work/46b95720-56e1-44bb-a07b-b9b200025d93/_y.avro.
+NOTE: PROC IML 
+
+
+NOTE: PROC IML elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Concordance Correlation Coefficient - Repeated Measures.
+NOTE: Option TITLE2 changed to U-Statistics method, identity weight (Carrasco et al. 2013).
+NOTE: PROC PRINT data=ccc_out
+
+NOTE: PROC PRINT completed: 1 observations printed, 6 variables

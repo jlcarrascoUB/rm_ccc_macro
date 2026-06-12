@@ -1,0 +1,8 @@
+{
+  "bundle": "t001_rm_ccc_basic",
+  "source_file": "rm_ccc_macro_v2.sas",
+  "source_blob_sha": "baef1481b7817af39b18847ec5712a701f5f7865",
+  "source_commit": "c1d4c39",
+  "tier": "real_data",
+  "notes": "Macro-library repo with no callers; wrote a caller exercising %uccc (U-statistics CCC) from rm_ccc_macro_v2.sas with 16-subject mock blood-pressure longitudinal data (2 methods, 3 time points). Two Jenner IML adaptations applied: (1) 'read all var _num_' instead of 'read all var{quoted}' due to parser gap; (2) PROBIT(0.975) replaced with constant 1.95996. The variance-components path (%ccc_lon) depends on PROC MIXED ODS output tables read via 'read all var{string}' which Jenner does not yet support."
+}
